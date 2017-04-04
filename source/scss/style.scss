@@ -10,14 +10,13 @@ body {
   display: flex;
 }
 .content {
-  flex: 1;
   flex-basis: 0;
   margin: 6px;
   float:left;
 }
 #left-intro {
-  flex: 1;
   text-align: right;
+  margin-left: 300px;
 }
 #right-intro {
   flex: 2;
@@ -26,9 +25,33 @@ body {
 .likes{
   display: inline-block;
   color: $third-color;
+  .content {
+    padding: $font-base-size * 0.025 em;
+    h4 {
+      text-decoration: underline;
+    }
+  }
 }
-.likes > .content {
-  padding: $font-base-size * 0.025 em;
+
+.experience {
+  text-align: left;
+  font-size: $font-base-size * 1.3;
+  margin-left: 300px;
+  p {
+    font-size: $font-base-size * 2;
+    font-weight: bold;
+  }
+  ul {
+    margin: 0;
+    list-style-type: none;
+    li {
+      text-indent: -5px;
+    }
+    li:before {
+      content: "-";
+      text-indent: -5px;
+    }
+  }
 }
 
 
